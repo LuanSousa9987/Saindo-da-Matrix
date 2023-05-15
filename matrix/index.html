@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Matrix</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="matrix.css">
+</head>
+<body>
+  <h1 style="color: rgb(52, 199, 52); text-align: center; margin-top: 270px;">Matrix</h1>  
+  <canvas id="canvas"></canvas>
+
+  <div id="login-container">
+    <h2>Login</h2>
+    <input type="text" id="gostoso@gmail.com" placeholder="Username">
+    <input type="password" id="toma" placeholder="Password">
+    <button onclick="login()">Log In</button>
+  </div>
+
+  <script src="matrix.js"></script>
+  <script>
+    function login() {
+      var username = document.getElementById("gostoso@gmail.com").value;
+      var password = document.getElementById("toma").value;
+      
+      if (username === "gostoso@gmail.com" && password === "toma") {
+        window.location.href = "second-page.html";
+      } else {
+        alert("A senha está incorreta");
+      }
+    }
+  </script>
+</body>
+</html>
